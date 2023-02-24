@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#222121"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="250dp"
+        android:layout_height="260dp"
+        android:layout_marginTop="32dp"
+        app:cardBackgroundColor="#FFF0DA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/About"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:elegantTextHeight="true"
+            android:fontFamily="sans-serif-condensed"
+            android:hint="Welcome"
+            android:rotationX="-34"
+            android:rotationY="13"
+            android:textAlignment="center"
+            android:textColor="#495546"
+            android:textColorHint="#495546"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+        <TextView
+            android:id="@+id/info_text"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="48dp"
+            android:layout_marginBottom="32dp"
+            android:text="Σe are the 'Retro Sci-Fi Society'. Resistance is futile.&#xA;&#xA;Here you find writings from the giants of Sci-fi.&#xA;&#xA;But first: complete the book-challenges in the about section. When finished, hit the switch for the next experience..."
+            android:textAlignment="gravity"
+            android:textColor="#495546"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/About"
+            app:layout_constraintVertical_bias="0.0" />
+    </androidx.cardview.widget.CardView>
+
+
+    <Switch
+        android:id="@+id/movies_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:text="Retro Σovie Switch"
+        android:textColor="#FFF0DA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/movie_cardview"
+        android:layout_width="250dp"
+        android:layout_height="260dp"
+        android:backgroundTint="#FFF0DA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+        <CheckBox
+            android:id="@+id/kubrik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="16dp"
+            android:text="&quot;2001- A Space Odyssey&quot; by: Stanley Kubrik" />
+
+        <CheckBox
+            android:id="@+id/Tarkovsky"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="64dp"
+            android:text="&quot;Solaris&quot; by: Andrei Tarkovsky" />
+
+        <CheckBox
+            android:id="@+id/fritz_lang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="112dp"
+            android:text="&quot;Metropolis&quot; by: Fritz Lang" />
+
+        <CheckBox
+            android:id="@+id/tarkovsky_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="156dp"
+            android:text="&quot;Alien&quot; by: Ridley Scott" />
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="204dp"
+            android:text="&quot;Forbidden Planet&quot; by: Nicholas Nayfack" />
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/space_woman_2"
+        android:layout_width="wrap_content"
+        android:layout_height="220dp"
+        android:layout_marginTop="401dp"
+        android:layout_marginBottom="110dp"
+        android:background="@drawable/bgspacewoman5"
+        android:src="@drawable/gradient_background_login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

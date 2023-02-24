@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".LoggedInActivity">
+
+    <ImageView
+        android:id="@+id/spaceman"
+        android:layout_width="wrap_content"
+        android:layout_height="600dp"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/bgspaceman"
+        android:src="@drawable/gradient_background_login"
+        app:layout_constraintBottom_toTopOf="@+id/cardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.32" />
+
+    <TextView
+        android:id="@+id/about_intent"
+        android:layout_width="130dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_btn"
+        android:fontFamily="sans-serif-condensed"
+        android:includeFontPadding="true"
+        android:padding="@dimen/cardview_default_radius"
+        android:rotationY="-25"
+        android:text="Δbout"
+        android:textAlignment="center"
+        android:textColor="#FFF0DA"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/welcome_intent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/welcome_intent"
+        android:layout_width="130dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_btn"
+        android:fontFamily="sans-serif-condensed"
+        android:includeFontPadding="true"
+        android:padding="@dimen/cardview_default_radius"
+        android:rotationY="20"
+        android:text="Σelcome"
+        android:textAlignment="center"
+        android:textColor="#FFF0DA"
+        android:textColorHint="#00BCD4"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toStartOf="@+id/about_intent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="top" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="top" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="500dp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="250dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="16dp"
+        app:cardBackgroundColor="#FFF0DA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/About"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:elegantTextHeight="true"
+            android:fontFamily="sans-serif-condensed"
+            android:hint="enteredText"
+            android:rotationX="40"
+            android:textAlignment="center"
+            android:textColor="#495546"
+            android:textColorHint="#495546"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+        <TextView
+            android:id="@+id/info_text"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="32dp"
+            android:text="You safely arrived at the realms of the 'Retro Sci-Fi Society'. Please visit the 'Welcome' and 'About' sections."
+            android:textAlignment="gravity"
+            android:textColor="#495546"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/About"
+            app:layout_constraintVertical_bias="0.0" />
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
